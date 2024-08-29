@@ -1,0 +1,361 @@
+:root {
+    --main-gray: #D3D3D3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+html {
+    scroll-padding-top: 85px;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: [start] 1fr [L2] 1fr [L3];
+    height: 75px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    background-color: var(--main-gray);
+}
+
+#header-logo-container {
+    grid-column-start: start L2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-img {
+    object-fit: cover;
+    height: 50px;
+}
+
+#macbook-logo-text {
+    font-size: 50px;
+}
+
+#header-navbar-container {
+    grid-column: L2 L3;
+    display: flex;
+    align-items: center;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.nav-link {
+    font-size: 25px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.nav-link:active {
+    color: gray;
+}
+
+#email-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    margin-top: 75px;
+    width: 100%;
+    height: 160px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#email-hook {
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+
+#email {
+    width: 275px;
+    height: 30px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 5px;
+}
+
+#submit {
+    width: 150px;
+    height: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 1000;
+    font-size: medium;
+}
+
+#youtube-vid-container {
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+/* Benefits styles */
+#benefits-container {
+    display: grid;
+    grid-template-columns: 
+        [first-col-line] 33.33% [second-col-line] 66.66% [third-col-line];
+    grid-template-rows: 
+        [first-row-line] 1fr [second-row-line] 1fr [third-row-line] 1fr [fourth-row-line];
+    gap: 1px solid black;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 45%;
+}
+
+.benefits-icon {
+    object-fit: cover;
+    height: 100px;
+    align-self: center;
+    justify-self: center;
+}
+
+#delivery-icon {
+    grid-row-start: first-row-line;
+}
+
+#warranty-icon {
+    grid-row-start: second-row-line;
+}
+
+#customer-service-icon {
+    grid-row-start: third-row-line;
+}
+
+.benefits-text {
+    align-self: center;
+    justify-self: center;
+}
+
+/* Laptop models styles */
+#models-title {
+    text-align: center;
+    font-size: 60px;
+}
+
+#laptop-models-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+/* class for each laptop model div container */
+.laptop-model {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#model-name {
+    font-size: larger;
+}
+
+/* laptop images */
+.laptop-image {
+    object-fit: contain;
+    height: 150px;
+}
+
+#mba13-image {
+    margin-bottom: 30px;
+}
+
+#mbp13-image {
+    margin-bottom: 30px;
+}
+
+#mbp14-image {
+    height: 165px;
+    margin-bottom: 15px;
+}
+
+#mbp16-image {
+    height: 180px;
+}
+
+/* Spec icon images */
+
+.spec-icons  {
+    object-fit: cover;
+    width: 15%;
+}
+
+#ram-icon {
+    width: 21%;
+}
+
+/* Containers for all the specs */
+.spec-element-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#mbp14-cpu-spec {
+    margin-top: 11px;
+}
+
+#mbp13-gpu-spec {
+    margin-top: 49px;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--main-gray);
+    border-top: 1px solid black;
+    display: grid;
+    grid-template-columns: 
+        [start-col-line] 1fr
+        [second-col-line] 1fr
+        [third-col-line];
+    grid-template-rows: 
+        [start-row-line] 100% [end-row-line];
+}
+
+/* Social media button styles */
+#social-media-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-button {
+    object-fit: cover;
+    height: 50px;
+    margin: 10px 20px;
+}
+
+.social-media-button:hover {
+    cursor: pointer;
+}
+
+
+#copyright {
+    grid-column-start: second-col-line;
+}
+
+/* Footer info styles */
+#footer-info-container {
+    grid-column-start: second-col-line;
+    grid-row-start: start-row-line;
+    height: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+#footer-info-container > p > a {
+    text-decoration: none;
+    color: black;
+}
+
+#footer-info-container > p > a:hover {
+    color: white;
+}
+
+#footer-info-container > p > a:active {
+    color: gray;
+}
+
+
+
+#copyright {
+    grid-column-start: second-col-line;
+    grid-row-start: start-row-line;
+    text-align: center;
+    display: block;
+    margin-top: 40px;
+}
+
+/* iphone media query */
+
+@media only screen and (max-width: 414px){
+    #header-img {
+        object-fit: cover;
+        height: 30px;
+    }
+    
+    #macbook-logo-text {
+        font-size: 30px;
+    }
+    
+    #nav-bar {
+        justify-content: start;
+    }
+
+    #nav-bar > a {
+        margin: 3px;
+        font-size: 15px;
+    }
+
+    #benefits-container {
+        width: 90vw;
+    }
+
+    .benefits-icon {
+        object-fit: cover;
+        height: 60px;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    #laptop-models-container {
+        flex-wrap: wrap;
+    }
+
+    .laptop-model {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid var(--main-gray);
+        padding: 20px;
+    }
+
+    #mbp16 {
+        border-bottom: none;
+    }
+
+    .social-media-button {
+        object-fit: cover;
+        height: 30px;
+        margin: 10px 15px;
+    }
+}

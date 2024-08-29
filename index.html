@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+    <head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<link rel="stylesheet" href="./styles.css">
+			<!-- Fonts -->
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">	
+    </head>
+    <body>
+			<!-- Fixed Header -->
+			<header id="header">
+				<div id="header-logo-container">
+					<img id="header-img" src="media\pngwing.com.png" alt="Apple Logo"/>
+					<p id="macbook-logo-text">MacBook</p>
+				</div>
+				<div id="header-navbar-container">
+					<nav id="nav-bar">
+						<a class="nav-link" href="#youtube-vid-container">Review</a>
+						<a class="nav-link" href="#benefits-container">Benefits</a>
+						<a class="nav-link" href="#models-title">Models</a>
+					</nav>
+				</div>
+			</header>
+
+			<!-- Hook and Email -->
+			<div id="email-container">
+				<form id="form" action="https://www.freecodecamp.com/email-submit">
+					<h1 id="email-hook">Discover the best of laptops</h1>
+					<input type="email" name="email" id="email" placeholder="Enter your email here...">
+					<input type="submit" value="Submit" id="submit">
+				</form>
+			</div>
+
+			<!-- Youtube Video -->
+			<div id="youtube-vid-container">
+				<iframe
+					height="315"
+					width="560"
+					id="video"
+					src="https://www.youtube.com/embed/mKTTqnLYU7w?si=7wrHdTHeyqM-6YGy" 
+					title="YouTube video player" 
+					frameborder="0" 
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+					allowfullscreen>
+				</iframe>
+			</div>
+
+			<!-- Apple Benefits -->
+			<div id="benefits-container">
+				<img 
+					id="delivery-icon" 
+					class="benefits-icon" 
+					src="media\delivery.png" 
+					alt=""
+				/>
+				<img 
+					id="customer-service-icon"
+					class="benefits-icon"
+					src="media\support.png"
+					alt=""
+				/>
+				<img 
+					id="warranty-icon"
+					class="benefits-icon"
+					src="media\warranty.png" 
+					alt=""
+				/>
+				<h2 class="benefits-text">
+					International free shipping and returns
+				</h2>
+				<h2 class="benefits-text">
+					Free 3 year warranty
+				</h2>
+				<h2 class="benefits-text">
+					24/7 Customer service and support
+				</h2>
+			</div>
+
+			<!-- Models Available -->
+			<p id="models-title">Available Models</p>
+			<div id="laptop-models-container">
+				<!-- MacBook Air 13 inch -->
+				<div class="laptop-model" id="mba13">
+					<img 
+						id="mba13-image"  
+						class="laptop-image" 
+						src="media\MBP16.png" 
+						alt="MacBook Air 13 inch"
+					/>
+					
+					<p id="model-name">MacBook Air 13"</p>
+					<!-- Beginning of spec elements-->
+					<div class="spec-element-container">
+						<h3>13.6"</h3>
+						<p>LED-Backlit display</p>
+					</div>
+					
+					<div class="spec-element-container">
+						<h3>M2 Chip</h3>
+					</div>
+					
+					<div class="spec-element-container">
+						<h3>8-core</h3>
+						<p>CPU</p>
+					</div>
+
+					<div class="spec-element-container">
+						<p>Up to</p>
+						<h3>10-core</h3>
+						<p>GPU</p>
+					</div>
+
+					<div class="spec-element-container">
+						<img class="spec-icons" id="ram-icon" src="media\ram icon.png" alt="RAM Icon">
+						<p>Up to 24GB unified memory</p>
+					</div>
+
+					<div class="spec-element-container">
+						<h3>2TB</h3>
+						<p>Maximum configurable storage</p>
+					</div>
+					
+
+					<div class="spec-element-container">
+						<img class="spec-icons" src="media\battery.png" alt="Battery Icon">
+						<p>Up to 18 hours battery life</p>
+					</div>
+					
+
+					<div class="spec-element-container">
+						<img class="spec-icons" src="media\video icon.png" alt="video icon">
+						<p>1080p FaceTime HD camera</p>
+					</div>
+					
+
+					<div class="spec-element-container">
+						<img class="spec-icons" src="media\volume.png" alt="sound icon">
+						<p>
+							Studio-quality three-mic array <br>
+							Stereo speakers with Spatial Audio
+						</p>
+					</div>
+		
+					<div class="spec-element-container">
+						<h3>1.24kg</h3>
+						<p>Weight</p>
+					</div>
+					
+					<div class="spec-element-container">
+						<img class="spec-icons" src="media\touch id.png" alt="touch id and touch bar icon">
+						<p>Touch ID</p>
+					</div>
+
+					<div class="spec-element-container">
+						<h1>A$1,799</h1>
+					</div>
+				</div>
+
+				<!-- MacBook Pro 13 inch -->
+				<div class="laptop-model" id="mbp13">
+					<img 
+						id="mbp13-image" 
+						class="laptop-image"
+						src="media\MBP13.png"
+						alt="MacBook Pro 13 inch"
+					/>
+
+					<h1>MacBook Pro 13"</h1>
+					<!-- Beginning of spec elements-->
+					<div class="spec-element-container">
+						<h3>13.3"</h3>
+						<p>Retina display</p>
+					</div>
+					
+					<div class="spec-element-container">
+						<h3>M2 Chip</h3>
+					</div>
+					
+					<div class="spec-element-container">
+						<h3>8-core</h3>
+						<p>CPU</p>
+					</div>
+
+					<div id="mbp13-gpu-spec" class="spec-element-container">
+						<h3>10-core</h3>
+						<p>GPU</p>
+					</div>
+
+					<div class="spec-element-container">
+						<img class="spec-icons" id="ram-icon" src="media\ram icon.png" alt="RAM Icon">
+						<p>Up to 24GB unified memory</p>
+					</div>
+
+					<div class="spec-element-container">
+						<h3>2TB</h3>
+						<p>Maximum configurable storage</p>
+					</div>
+					
+
+					<div class="spec-element-container">
+						<img class="spec-icons" src="media\battery.png" alt="Battery Icon">
+						<p>Up to 20 hours battery life</p>
+					</div>
+					
+
+					<div class="spec-element-container">
+						<img class="spec-icons" src="media\video icon.png" alt="video icon">
+						<p>720p FaceTime HD camera</p>
+					</div>
+					
+
+					<div class="spec-element-container">
+						<img class="spec-icons" src="media\volume.png" alt="sound icon">
+						<p>
+							Studio-quality three-mic array <br>
+							Stereo speakers with Spatial Audio
+						</p>
+					</div>
+		
+					<div class="spec-element-container">
+						<h3>1.4kg</h3>
+						<p>Weight</p>
+					</div>
+					
+					<div class="spec-element-container">
+						<img class="spec-icons" src="media\touch id.png" alt="touch id and touch bar icon">
+						<p>Touch Bar and Touch ID</p>
+					</div>
+
+					<div class="spec-element-container">
+						<h1>From A$1,999</h1>
+					</div>
+				</div>
+
+				<!-- MacBook Pro 14 inch -->
+				<div class="laptop-model" id="mbp14">
+					<img 
+						id="mbp14-image"
+						class="laptop-image"
+						src="media\MBP14.png"
+						alt="MacBook Pro 14 inch"
+					/>
+
+					<h1>MacBook Pro 14"</h1>
+					<!-- Beginning of spec elements-->
+					<div class="spec-element-container">
+						<h3>14.2"</h3>
+						<p>Liquid Retina XDR display</p>
+					</div>
+					
+					<div class="spec-element-container">
+						<h3>M2 Pro or M2 Max Chip</h3>
+					</div>
+					
+					<div id="mbp14-cpu-spec" class="spec-element-container">
+						<p>Up to</p>
+						<h3>12-core</h3>
+						<p>CPU</p>
+					</div>
+
+					<div class="spec-element-container">
+						<p>Up to</p>
+						<h3>38-core</h3>
+						<p>GPU</p>
+					</div>
+
+					<div class="spec-element-container">
+						<img class="spec-icons" id="ram-icon" src="media\ram icon.png" alt="RAM Icon">
+						<p>Up to 96GB unified memory</p>
+					</div>
+
+					<div class="spec-element-container">
+						<h3>8TB</h3>
+						<p>Maximum configurable storage</p>
+					</div>
+					
+
+					<div class="spec-element-container">
+						<img class="spec-icons" src="media\battery.png" alt="Battery Icon">
+						<p>Up to 18 hours battery life</p>
+					</div>
+					
+
+					<div class="spec-element-container">
+						<img class="spec-icons" src="media\video icon.png" alt="video icon">
+						<p>1080p FaceTime HD camera</p>
+					</div>
+					
+
+					<div class="spec-element-container">
+						<img class="spec-icons" src="media\volume.png" alt="sound icon">
+						<p>
+							Studio-quality three-mic array <br>
+							Stereo speakers with Spatial Audio
+						</p>
+					</div>
+		
+					<div class="spec-element-container">
+						<h3>1.61kg</h3>
+						<p>Weight</p>
+					</div>
+					
+					<div class="spec-element-container">
+						<img class="spec-icons" src="media\touch id.png" alt="touch id and touch bar icon">
+						<p>Touch ID</p>
+					</div>
+					
+					<div class="spec-element-container">
+						<h1>From A$3,199</h1>
+					</div>
+				</div>
+
+				<!-- MacBook Pro 16 inch -->
+				<div class="laptop-model" id="mbp16">
+					<img 
+						id="mbp16-image" 
+						class="laptop-image" 
+						src="media\MBA13.png" 
+						alt="MacBook Pro 16 inch"
+					/>
+
+					<h1>MacBook Pro 16"</h1>
+					<!-- Beginning of spec elements-->
+					<div class="spec-element-container">
+						<h3>16.2"</h3>
+						<p>Liquid Retina XDR display</p>
+					</div>
+					
+					<div class="spec-element-container">
+						<h3>M2 Pro or M2 Max Chip</h3>
+					</div>
+					
+					<div class="spec-element-container">
+						<h3>12-core</h3>
+						<p>CPU</p>
+					</div>
+
+					<div class="spec-element-container">
+						<p>Up to</p>
+						<h3>38-core</h3>
+						<p>GPU</p>
+					</div>
+
+					<div class="spec-element-container">
+						<img class="spec-icons" id="ram-icon" src="media\ram icon.png" alt="RAM Icon">
+						<p>Up to 96GB unified memory</p>
+					</div>
+
+					<div class="spec-element-container">
+						<h3>8TB</h3>
+						<p>Maximum configurable storage</p>
+					</div>
+					
+
+					<div class="spec-element-container">
+						<img class="spec-icons" src="media\battery.png" alt="Battery Icon">
+						<p>Up to 22 hours battery life</p>
+					</div>
+					
+
+					<div class="spec-element-container">
+						<img class="spec-icons" src="media\video icon.png" alt="video icon">
+						<p>1080p FaceTime HD camera</p>
+					</div>
+					
+
+					<div class="spec-element-container">
+						<img class="spec-icons" src="media\volume.png" alt="sound icon">
+						<p>
+							Studio-quality three-mic array <br>
+							Stereo speakers with Spatial Audio
+						</p>
+					</div>
+		
+					<div class="spec-element-container">
+						<h3>2.15kg</h3>
+						<p>Weight</p>
+					</div>
+					
+					<div class="spec-element-container">
+						<img class="spec-icons" src="media\touch id.png" alt="touch id and touch bar icon">
+						<p>Touch ID</p>
+					</div>
+
+					<div class="spec-element-container">
+						<h1>From A$3,999</h1>
+					</div>
+				</div>
+			</div>
+
+			<!-- Footer -->
+			<footer>
+				<div id="social-media-container">
+					<img 
+						id="twitter" 
+						class="social-media-button" 
+						src="media\twitter.png" 
+						alt="black twitter icon"
+					/>
+					<img 
+						id="instagram" 
+						class="social-media-button" 
+						src="media\instagram.png" 
+						alt="black instagram icon"
+					/>
+					<img 
+						id="facebook" 
+						class="social-media-button" 
+						src="media\facebook.png" 
+						alt="black facebook icon"
+					/>
+				</div>
+				
+				<div id="footer-info-container">
+					<p><a href="body">Privacy</a></p>
+					<p><a href="#email-hook">Terms</a></p>
+					<p><a href="#email-hook">Contract</a></p>
+				</div>
+				<p id="copyright">Copyright 2023, MacBook</p>
+			</footer>
+    </body>
+</html>
+
+
